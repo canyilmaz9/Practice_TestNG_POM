@@ -32,6 +32,10 @@ public class Priority {
     // 2- https://www.mercedes-benz.de/ anasayfaya gidip title'in Mercedes-Benz Personalwagen icerdigini test edin
     // 3- youtube anasayfaya gidip url'in youtube icerdigini test edin
 
+    // Priortiy default 0. Eksi olan önce baslar.
+    // Eger esit ise harf sirasina göre:
+    // mercedes_benzTest -> testotomasyonuTesti -> youtubeTesti
+
     @Test
     public void youtubeTesti(){
         // 3- youtube anasayfaya gidip url'in youtube icerdigini test edin
@@ -55,7 +59,7 @@ public class Priority {
     }
 
     @Test(priority = -20)
-    public void wisequarterTest(){
+    public void mercedes_benzTest(){
         // 2- wisequarter.com anasayfaya gidip title'in Wise icerdigini test edin
         driver.get("https://www.mercedes-benz.de");
 
